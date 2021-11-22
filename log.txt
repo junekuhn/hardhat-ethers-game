@@ -1,0 +1,9 @@
+npm init -y
+npm install --save-dev hardhat
+npx hardhat
+
+install deps
+install openzepplin
+run script to deploy contract on testnet
+
+exchanged all code for test and script
