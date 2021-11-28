@@ -1,3 +1,4 @@
+--------------------building the nfts--------------------------------------
 npm init -y
 npm install --save-dev hardhat
 npx hardhat
@@ -7,3 +8,51 @@ install openzepplin
 run script to deploy contract on testnet
 
 exchanged all code for test and script
+
+The Hardhat Runtime Environment, or HRE for short, is an object containing all the functionality that Hardhat exposes when running a task, test or script. In reality, Hardhat is the HRE.
+
+Created struct for nft attributes
+created constructor for initializing nft
+javascript for loading the members of radiohead as nfts
+tested deployment
+
+Using Counters to create an NFT identifier
+create a mapping for the id to the attributes 
+create a token using ERC721() constructor 
+increment the Counter with increment()
+mintNFT function that
+ - gets the current id
+ - assign token id to a wallet
+ - assign attributes
+ - increment the tokenid
+
+ made an account on Alchemy
+ got the keys
+ deployed what I have to rinkeby
+ view on etherscan and opensea testnets 
+ testnets.opensea.io
+ rinkeby.etherscan.io
+
+ added the boss struct, propetries, data
+ attack boss function
+
+ run the script BEFORE running --network rinkeby.  it needs to compile, clearly.
+
+---------------building the app -------------------------------------------- 
+Solidity quirk
+_tokenIds.increment() in the constructor! That way, no one is allowed to have tokenId 0. This is one of those cases where we need to be smart in how we set up our code because of some of the quirks of Solidity :).
+
+check if player has nft function 
+puclic, view, returns (CharacterAttributes memory)
+
+function that returns all default characters 
+function that returns the boss
+best practice to create get functions :)
+
+you can't return values from a transaction
+created events that the app will be listening to 
+ 0x52440e3674ddDa762a91906D190EfC96c8E6f8e7 contract address
+
+
+
+
